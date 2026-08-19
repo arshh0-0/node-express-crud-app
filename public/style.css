@@ -19,14 +19,18 @@ h1 {
   font-size: 2.2rem;
 }
 
+/* =========================
+   POSTS
+========================= */
+
 .post {
   background: #181b24;
   border: 1px solid #292d39;
-  border-radius: 12px;
-  padding: 22px;
+  border-radius: 14px;
+  padding: 30px;
   margin: 20px auto;
   max-width: 700px;
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 10px 35px rgba(0, 0, 0, 0.3);
   transition:
     transform 0.2s ease,
     border-color 0.2s ease;
@@ -50,6 +54,10 @@ h1 {
   line-height: 1.6;
 }
 
+/* =========================
+   LINKS
+========================= */
+
 a {
   color: #8b5cf6;
   text-decoration: none;
@@ -59,6 +67,10 @@ a {
 a:hover {
   color: #a78bfa;
 }
+
+/* =========================
+   BUTTONS
+========================= */
 
 button {
   background: #8b5cf6;
@@ -77,6 +89,10 @@ button:hover {
   background: #7c3aed;
   transform: translateY(-1px);
 }
+
+/* =========================
+   FORMS
+========================= */
 
 input,
 textarea {
@@ -112,13 +128,153 @@ label {
   font-weight: 600;
 }
 
+/* =========================
+   CONTAINER
+========================= */
+
 .container {
   max-width: 900px;
   margin: 0 auto;
 }
 
+/* =========================
+   EDIT PAGE
+========================= */
+
+.edit-container {
+  min-height: calc(100vh - 80px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.edit-card {
+  width: 100%;
+  max-width: 700px;
+  background: #181b24;
+  border: 1px solid #292d39;
+  border-radius: 14px;
+  padding: 30px;
+  box-shadow: 0 10px 35px rgba(0, 0, 0, 0.3);
+}
+
+.edit-card h1 {
+  text-align: left;
+  margin-bottom: 25px;
+  font-size: 1.8rem;
+}
+
+.post-info {
+  background: #12141b;
+  border: 1px solid #292d39;
+  border-radius: 8px;
+  padding: 15px;
+  margin-bottom: 25px;
+}
+
+.post-info p {
+  color: #9ca3af;
+  margin: 6px 0;
+  font-size: 0.9rem;
+  word-break: break-all;
+}
+
+.post-info span {
+  color: #cbd5e1;
+  font-weight: 600;
+}
+
+.edit-card form {
+  max-width: none;
+}
+
+.edit-card textarea {
+  min-height: 220px;
+  margin-top: 10px;
+}
+
+.edit-actions {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-top: 5px;
+}
+
+.edit-actions a {
+  background: #292d39;
+  color: #d1d5db;
+  padding: 10px 18px;
+  border-radius: 8px;
+  transition: background 0.2s ease;
+}
+
+.edit-actions a:hover {
+  background: #363b49;
+  color: #ffffff;
+}
+
+/* =========================
+   DIVIDERS
+========================= */
+
 hr {
   border: none;
   border-top: 1px solid #292d39;
   margin: 30px 0;
+}
+
+/* =========================
+   NEW POST PAGE
+========================= */
+
+.new-container {
+  min-height: calc(100vh - 80px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.new-card {
+  width: 100%;
+  max-width: 700px;
+  background: #181b24;
+  border: 1px solid #292d39;
+  border-radius: 14px;
+  padding: 30px;
+  box-shadow: 0 10px 35px rgba(0, 0, 0, 0.3);
+}
+
+.new-card h1 {
+  text-align: left;
+  margin-bottom: 25px;
+  font-size: 1.8rem;
+}
+
+.new-card form {
+  max-width: none;
+}
+
+.new-card textarea {
+  min-height: 220px;
+  margin-top: 10px;
+}
+
+.new-actions {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-top: 5px;
+}
+
+.new-actions a {
+  background: #292d39;
+  color: #d1d5db;
+  padding: 10px 18px;
+  border-radius: 8px;
+  transition: background 0.2s ease;
+}
+
+.new-actions a:hover {
+  background: #363b49;
+  color: #ffffff;
 }
